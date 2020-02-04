@@ -1,0 +1,19 @@
+<!-- Google Customer Reviews -->
+{% if template == "thankyou" %}
+<script src="https://apis.google.com/js/platform.js?onload=renderOptIn" async defer></script>
+<script>
+  window.renderOptIn = function() {
+    window.gapi.load('surveyoptin', function() {
+      window.gapi.surveyoptin.render(
+        {
+          "merchant_id": {{ integration['MERCHANT_ID'] }},
+          "order_id": "{{ cart.order_code }}",
+          "email": "{{ customer.email }}",
+          "delivery_country": "{{ cart.destination_country }}",
+          "estimated_delivery_date": "{{ cart.shipping_type.estimated_delivery | date: "%Y-%m-%d" }}",
+        });
+    });
+  }
+</script>
+{% endif %}
+<!-- End Google Customer Reviews -->
