@@ -1,8 +1,6 @@
 [<img src="versacommerce.png" width="250px" align="right" alt="VersaCommerce.de">](https://www.versacommerce.de/?utm_source=github)
 [<img src="google.png" width="90px" align="right" alt="support.google.com">](https://support.google.com/merchants/answer/7548675?hl=en/?utm_source=www.versacommerce.de)
 
-[VersaCommerce] [integration] [javascript] [GoogleCustomerReviews]
-
 # Google Customer Reviews Integration for VersaCommerce
 
 ## Google Customer Reviews
